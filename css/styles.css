@@ -243,19 +243,13 @@
 
 /* line 162, ../sass/theme/_layout.scss */
 .link-button--icon {
-  max-width: .75em;
   position: relative;
-  top: 50%;
-  vertical-align: baseline;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: .5em;
+  max-width: .75em;
 }
 
 /* Page content */
-/* line 171, ../sass/theme/_layout.scss */
+/* line 172, ../sass/theme/_layout.scss */
 .page-content {
   border-bottom: 1px dashed #cccccc;
   padding-bottom: 1.5em;
@@ -264,22 +258,22 @@
 }
 
 /* Forms */
-/* line 182, ../sass/theme/_layout.scss */
+/* line 183, ../sass/theme/_layout.scss */
 .form--wrapper {
   margin-bottom: 3em;
 }
 
-/* line 186, ../sass/theme/_layout.scss */
+/* line 187, ../sass/theme/_layout.scss */
 .form--input {
   margin-bottom: 1.5em;
 }
 
-/* line 190, ../sass/theme/_layout.scss */
+/* line 191, ../sass/theme/_layout.scss */
 .form--password-wrapper {
   position: relative;
 }
 
-/* line 194, ../sass/theme/_layout.scss */
+/* line 195, ../sass/theme/_layout.scss */
 .form--toggle-password {
   position: absolute;
   right: 1em;
@@ -289,7 +283,7 @@
   font-size: 75%;
 }
 
-/* line 204, ../sass/theme/_layout.scss */
+/* line 205, ../sass/theme/_layout.scss */
 .form--toggle-password-icon {
   left: -1.75em;
   max-width: 1.25em;
@@ -297,14 +291,14 @@
   top: 0.35em;
 }
 
-/* line 211, ../sass/theme/_layout.scss */
+/* line 212, ../sass/theme/_layout.scss */
 .form--new-code {
   padding-top: 2em;
   text-align: center;
 }
 
 /* Messages */
-/* line 220, ../sass/theme/_layout.scss */
+/* line 221, ../sass/theme/_layout.scss */
 .message, .message--success {
   margin-bottom: 2em;
   padding: 1em 1.5em;
@@ -316,7 +310,7 @@
   -o-border-radius: 0.6em;
   border-radius: 0.6em;
 }
-/* line 229, ../sass/theme/_layout.scss */
+/* line 230, ../sass/theme/_layout.scss */
 .message label, .message--success label {
   display: inline;
   margin: 0;
@@ -324,7 +318,7 @@
 }
 
 /* Footer */
-/* line 244, ../sass/theme/_layout.scss */
+/* line 245, ../sass/theme/_layout.scss */
 .footer {
   padding-top: 2.5em;
   background: url("/images/dotted.png") no-repeat top center;

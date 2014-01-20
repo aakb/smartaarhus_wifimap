@@ -160,9 +160,10 @@
 }
 
 .link-button--icon {
-  max-width: .75em;
+  position: relative;
+  top: .5em;
 
-  @include vertical-align();
+  max-width: .75em;
 }
 
 
