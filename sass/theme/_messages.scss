@@ -1,0 +1,27 @@
+/**
+ *
+ * Messages
+ *
+ */
+
+
+.message {
+  margin-bottom: 2em;
+  padding: 1em 1.5em;
+
+  background-color: $green;
+  color: darken($green, 50%);
+
+  @include border-radius($border-radius);
+
+  label {
+    display: inline;
+    margin: 0;
+
+    font-weight: bold;
+  }
+}
+
+.message--success {
+  @extend .message;
+}
