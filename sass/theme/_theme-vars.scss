@@ -28,7 +28,8 @@ $gray-darkest:     #444;
 /* Typograhy
    ================================================================================================================== */
 
-$font:             1em/1.5 Arial, sans-serif;
+$font-family:      Arial, sans-serif;
+$font:             1em/1.5 $font-family;
 
 
 

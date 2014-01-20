@@ -691,7 +691,8 @@ h6 {
   margin-top: 0;
   margin-bottom: 1em;
   color: #666666;
-  font-family: 1em/1.5 Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 175%;
   font-weight: bold;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
@@ -699,51 +700,51 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 
-/* line 38, ../sass/base/_base.scss */
+/* line 39, ../sass/base/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 43, ../sass/base/_base.scss */
+/* line 44, ../sass/base/_base.scss */
 em {
   font-style: italic;
 }
-/* line 46, ../sass/base/_base.scss */
+/* line 47, ../sass/base/_base.scss */
 em strong {
   font-weight: bold;
 }
 
 /* Links
    ================================================================================================================== */
-/* line 57, ../sass/base/_base.scss */
+/* line 58, ../sass/base/_base.scss */
 a:link {
   color: #2d84d8;
   text-decoration: underline;
 }
-/* line 62, ../sass/base/_base.scss */
+/* line 63, ../sass/base/_base.scss */
 a:visited {
   color: #2577c7;
 }
-/* line 66, ../sass/base/_base.scss */
+/* line 67, ../sass/base/_base.scss */
 a:hover {
   color: #216ab1;
   text-decoration: none;
 }
-/* line 71, ../sass/base/_base.scss */
+/* line 72, ../sass/base/_base.scss */
 a:focus {
   color: #216ab1;
 }
 
 /* Paragraph
    ================================================================================================================== */
-/* line 80, ../sass/base/_base.scss */
+/* line 81, ../sass/base/_base.scss */
 p {
   margin-top: 0;
 }
 
 /* Image
    ================================================================================================================== */
-/* line 88, ../sass/base/_base.scss */
+/* line 89, ../sass/base/_base.scss */
 img {
   display: inline;
   height: auto;
