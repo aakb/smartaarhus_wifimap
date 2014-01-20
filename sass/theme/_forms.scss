@@ -5,7 +5,7 @@
  */
 
 .form--wrapper {
-  margin-bottom: $margin-bottom;
+  margin-bottom: 2em;
 }
 
 .form--input {
@@ -14,6 +14,16 @@
 
 .form--password-wrapper {
   position: relative;
+
+  // Internet Explorer 10 includes its own control for toggling password visibility that can compete with the plugin we
+  // use to show and hide the password.
+  // This override disables the control.
+
+  input[type="password"] {
+    &::-ms-reveal {
+      display: none !important;
+    }
+  }
 }
 
 .form--toggle-password {
