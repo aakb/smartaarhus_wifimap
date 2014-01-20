@@ -15,7 +15,7 @@
         <label for="password">Kodeord</label>
         <input type="password" placeholder="Indtast dit kodeord" id="password" class="form--input">
         <div class="form--toggle-password js-form-toggle-password" data-toggle-password="password">
-          <img src="/images/eye.png" class="form--toggle-password-icon">Vis/skjul kodeord
+          <img src="/images/eye.png" class="form--toggle-password-icon"><span class="js-form-toggle-text">Vis</span>
         </div>
       </div>
       <input type="submit" class="button" value="Log ind">
