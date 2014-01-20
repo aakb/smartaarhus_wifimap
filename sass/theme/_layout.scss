@@ -1,0 +1,173 @@
+/**
+ * Layouts
+ *
+ * This is an example file
+ *
+ * @author magnify
+ */
+
+
+%center-layout-container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 45em;
+}
+
+
+/* Header */
+
+.header {
+  height: 3em;
+  margin-bottom: $margin-bottom;
+  padding-right: 1em;
+  padding-left: 1em;
+
+  background-color: $orange;
+
+  a {
+    &:link {
+      color: $white;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: darken($orange, 5%);
+    }
+
+    &:hover {
+      color: darken($orange, 10%);
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: darken($white, 10%);
+    }
+  }
+}
+
+.header--inner {
+  @extend %center-layout-container;
+
+  position: relative;
+}
+
+
+/* Logos */
+
+.logo--wrapper,
+.aak-logo--wrapper {
+  position: absolute;
+
+  height: 3em;
+}
+
+.logo--wrapper {
+  left: 0;
+}
+
+.aak-logo--wrapper {
+  right: 0;
+}
+
+.logo,
+.aak-logo {
+  @include vertical-align();
+}
+
+.logo {
+  display: inline-block;
+  max-width: 10em;
+}
+
+.aak-logo {
+  max-width: 4em;
+}
+
+
+/* Layout */
+
+.layout {
+  @extend %center-layout-container;
+
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+
+
+/* Link buttons */
+
+.link-button--wrapper {
+  margin-bottom: 2em;
+}
+
+
+.link-button {
+  @extend .button;
+
+  position: relative;
+
+  margin-bottom: 1em;
+  width: 100%;
+
+  text-align: left;
+
+  @include box-sizing(border-box);
+
+  &:link,
+  &:visited {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: darken($blue, 5%);
+    color: $white;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: $white;
+  }
+}
+
+.link-button--icon-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  display: block;
+  padding-right: 1em;
+  padding-left: 1em;
+
+  background-color: darken($blue, 10%);
+
+  @include border-radius(0 $border-radius $border-radius 0);
+}
+
+.link-button--icon {
+  max-width: .75em;
+
+  @include vertical-align();
+}
+
+
+
+/* Footer */
+
+.footer {
+  padding-top: 2.5em;
+
+  background: url("/images/dotted.png") no-repeat top center;
+  text-align: center;
+}
+
+
+/* Example form */
+
+.example-form {
+  .example-form--input {
+    margin-bottom: $margin-bottom;
+  }
+}
