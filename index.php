@@ -12,11 +12,11 @@
       Bibliotekslogin
       <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
     </a>
-    <a href="skole-medarbejderlogin.php" class="link-button">
+    <a href="skolelogin.php" class="link-button">
       Skolelogin
       <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
     </a>
-    <a href="skole-medarbejderlogin.php" class="link-button">
+    <a href="medarbejderlogin.php" class="link-button">
       Medarbejderlogin
       <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
     </a>

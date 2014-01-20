@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head>
-  <title>Skole- og medarbejderlogin</title>
+  <title>Skolelogin</title>
   <?php include('inc/meta.inc'); ?>
 </head>
 
 <?php include('inc/header.inc'); ?>
 <div class="layout">
-  <h1>Skole- og medarbejderlogin</h1>
+  <h1>Skolelogin</h1>
   <div class="form--wrapper">
     <form action="logged-in.php">
       <label for="username">Brugernavn</label>
