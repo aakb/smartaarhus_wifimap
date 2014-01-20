@@ -7,7 +7,7 @@
 <?php include('inc/header.inc'); ?>
 <div class="layout">
   <h1>SMS login</h1>
-  <div class="message--success">Vi har sendt en kode til det indtastede nummer, indtast den i <label for="smscode">kode feltet</label> nedenfor</div>
+  <div class="message--success">Vi har sendt en kode til det indtastede nummer, indtast den i <label for="smscode">"Indtast kode" feltet</label> nedenfor</div>
   <div class="form--wrapper">
     <form action="logged-in.php">
       <div class="form--password-wrapper">
