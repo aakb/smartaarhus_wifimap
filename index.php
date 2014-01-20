@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <head>
   <title>SmartAarhus WIFI</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/css/styles.css">
+  <?php include('inc/meta.inc'); ?>
 </head>
-
-<header class="header" role="banner">
-  <div class="header--inner">
-    <a href="/" class="logo--wrapper"><img src="/images/logo.png" class="logo"></a>
-    <a href="/" class="aak-logo--wrapper"><img src="/images/aak-logo.png" class="aak-logo"></a>
-  </div>
-</header>
+<body class="frontpage">
+<?php include('inc/header.inc'); ?>
 <div class="layout">
   <h1>Vælg login</h1>
   <div class="link-button--wrapper">
-    <a href="#" class="link-button">
+    <a href="bibliotekslogin.php" class="link-button">
       Bibliotekslogin
       <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
     </a>
-    <a href="#" class="link-button">
+    <a href="skole-medarbejderlogin.php" class="link-button">
       Skolelogin
       <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
     </a>
-    <a href="#" class="link-button">
+    <a href="skole-medarbejderlogin.php" class="link-button">
       Medarbejderlogin
       <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
     </a>
-    <a href="#" class="link-button">
+    <a href="gaestelogin.php" class="link-button">
       Gæstelogin
       <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
     </a>
-    <a href="#" class="link-button">
+    <a href="sms-send-code.php" class="link-button">
       SMS login
       <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
     </a>
   </div>
-  <footer class="footer">
-    <a href="">Brug af cookies</a>
-  </footer>
+  <?php include('inc/footer.inc'); ?>
 </div>
 </body>
 </html>

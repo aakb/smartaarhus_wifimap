@@ -54,6 +54,7 @@
 
 /* Logos */
 
+.back-link--wrapper,
 .logo--wrapper,
 .aak-logo--wrapper {
   position: absolute;
@@ -62,13 +63,14 @@
 }
 
 .logo--wrapper {
-  left: 0;
+  left: 2em;
 }
 
 .aak-logo--wrapper {
   right: 0;
 }
 
+.back-link,
 .logo,
 .aak-logo {
   @include vertical-align();
@@ -83,6 +85,21 @@
   max-width: 4em;
 }
 
+.back-link {
+  display: block;
+  max-width: 1em;
+}
+
+.frontpage {
+  .back-link {
+    display: none;
+  }
+
+  .logo--wrapper {
+    left: 0;
+  }
+}
+
 
 /* Layout */
 
@@ -92,7 +109,6 @@
   padding-right: 2em;
   padding-left: 2em;
 }
-
 
 
 /* Link buttons */
@@ -108,11 +124,8 @@
   position: relative;
 
   margin-bottom: 1em;
-  width: 100%;
 
   text-align: left;
-
-  @include box-sizing(border-box);
 
   &:link,
   &:visited {
@@ -153,6 +166,78 @@
 }
 
 
+/* Page content */
+
+.page-content {
+  border-bottom: 1px dashed $gray-lighter;
+  padding-bottom: 1.5em;
+  margin-bottom: 2.5em;
+
+  color: $gray-dark;
+}
+
+
+/* Forms */
+
+.form--wrapper {
+  margin-bottom: $margin-bottom;
+}
+
+.form--input {
+  margin-bottom: 1.5em;
+}
+
+.form--password-wrapper {
+  position: relative;
+}
+
+.form--toggle-password {
+  position: absolute;
+  right: 1em;
+  bottom: 1.1em;
+
+  color: $gray;
+  cursor: pointer;
+  font-size: 75%;
+}
+
+.form--toggle-password-icon {
+  left: -1.75em;
+  max-width: 1.25em;
+  position: absolute;
+  top: 0.35em;
+}
+
+.form--new-code {
+  padding-top: 2em;
+
+  text-align: center;
+}
+
+
+/* Messages */
+
+.message {
+  margin-bottom: 2em;
+  padding: 1em 1.5em;
+
+  background-color: $green;
+  color: darken($green, 50%);
+
+  @include border-radius($border-radius);
+
+  label {
+    display: inline;
+    margin: 0;
+
+    font-weight: bold;
+  }
+}
+
+.message--success {
+  @extend .message;
+}
+
 
 /* Footer */
 
@@ -161,13 +246,4 @@
 
   background: url("/images/dotted.png") no-repeat top center;
   text-align: center;
-}
-
-
-/* Example form */
-
-.example-form {
-  .example-form--input {
-    margin-bottom: $margin-bottom;
-  }
 }

@@ -72,8 +72,12 @@
   background-color: #3788d4;
   border: 0;
   color: white;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 37, ../sass/theme/_buttons.scss */
+/* line 41, ../sass/theme/_buttons.scss */
 .button:hover, .link-button:hover {
   background-color: #2b7bc7;
   color: white;
@@ -127,24 +131,26 @@
 }
 
 /* Logos */
-/* line 58, ../sass/theme/_layout.scss */
+/* line 59, ../sass/theme/_layout.scss */
+.back-link--wrapper,
 .logo--wrapper,
 .aak-logo--wrapper {
   position: absolute;
   height: 3em;
 }
 
-/* line 64, ../sass/theme/_layout.scss */
+/* line 65, ../sass/theme/_layout.scss */
 .logo--wrapper {
-  left: 0;
+  left: 2em;
 }
 
-/* line 68, ../sass/theme/_layout.scss */
+/* line 69, ../sass/theme/_layout.scss */
 .aak-logo--wrapper {
   right: 0;
 }
 
-/* line 73, ../sass/theme/_layout.scss */
+/* line 75, ../sass/theme/_layout.scss */
+.back-link,
 .logo,
 .aak-logo {
   position: relative;
@@ -157,57 +163,68 @@
   transform: translateY(-50%);
 }
 
-/* line 77, ../sass/theme/_layout.scss */
+/* line 79, ../sass/theme/_layout.scss */
 .logo {
   display: inline-block;
   max-width: 10em;
 }
 
-/* line 82, ../sass/theme/_layout.scss */
+/* line 84, ../sass/theme/_layout.scss */
 .aak-logo {
   max-width: 4em;
 }
 
+/* line 88, ../sass/theme/_layout.scss */
+.back-link {
+  display: block;
+  max-width: 1em;
+}
+
+/* line 94, ../sass/theme/_layout.scss */
+.frontpage .back-link {
+  display: none;
+}
+/* line 98, ../sass/theme/_layout.scss */
+.frontpage .logo--wrapper {
+  left: 0;
+}
+
 /* Layout */
-/* line 89, ../sass/theme/_layout.scss */
+/* line 106, ../sass/theme/_layout.scss */
 .layout {
   padding-right: 2em;
   padding-left: 2em;
 }
 
 /* Link buttons */
-/* line 100, ../sass/theme/_layout.scss */
+/* line 116, ../sass/theme/_layout.scss */
 .link-button--wrapper {
   margin-bottom: 2em;
 }
 
-/* line 105, ../sass/theme/_layout.scss */
+/* line 121, ../sass/theme/_layout.scss */
 .link-button {
   position: relative;
   margin-bottom: 1em;
-  width: 100%;
   text-align: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
-/* line 118, ../sass/theme/_layout.scss */
+/* line 131, ../sass/theme/_layout.scss */
 .link-button:link, .link-button:visited {
   color: white;
   text-decoration: none;
 }
-/* line 123, ../sass/theme/_layout.scss */
+/* line 136, ../sass/theme/_layout.scss */
 .link-button:hover {
   background-color: #2b7bc7;
   color: white;
   text-decoration: none;
 }
-/* line 129, ../sass/theme/_layout.scss */
+/* line 142, ../sass/theme/_layout.scss */
 .link-button:focus {
   color: white;
 }
 
-/* line 134, ../sass/theme/_layout.scss */
+/* line 147, ../sass/theme/_layout.scss */
 .link-button--icon-wrapper {
   position: absolute;
   top: 0;
@@ -224,7 +241,7 @@
   border-radius: 0 0.6em 0.6em 0;
 }
 
-/* line 149, ../sass/theme/_layout.scss */
+/* line 162, ../sass/theme/_layout.scss */
 .link-button--icon {
   max-width: .75em;
   position: relative;
@@ -237,18 +254,81 @@
   transform: translateY(-50%);
 }
 
+/* Page content */
+/* line 171, ../sass/theme/_layout.scss */
+.page-content {
+  border-bottom: 1px dashed #cccccc;
+  padding-bottom: 1.5em;
+  margin-bottom: 2.5em;
+  color: #666666;
+}
+
+/* Forms */
+/* line 182, ../sass/theme/_layout.scss */
+.form--wrapper {
+  margin-bottom: 3em;
+}
+
+/* line 186, ../sass/theme/_layout.scss */
+.form--input {
+  margin-bottom: 1.5em;
+}
+
+/* line 190, ../sass/theme/_layout.scss */
+.form--password-wrapper {
+  position: relative;
+}
+
+/* line 194, ../sass/theme/_layout.scss */
+.form--toggle-password {
+  position: absolute;
+  right: 1em;
+  bottom: 1.1em;
+  color: #999999;
+  cursor: pointer;
+  font-size: 75%;
+}
+
+/* line 204, ../sass/theme/_layout.scss */
+.form--toggle-password-icon {
+  left: -1.75em;
+  max-width: 1.25em;
+  position: absolute;
+  top: 0.35em;
+}
+
+/* line 211, ../sass/theme/_layout.scss */
+.form--new-code {
+  padding-top: 2em;
+  text-align: center;
+}
+
+/* Messages */
+/* line 220, ../sass/theme/_layout.scss */
+.message, .message--success {
+  margin-bottom: 2em;
+  padding: 1em 1.5em;
+  background-color: #b9ff73;
+  color: #3a7300;
+  -webkit-border-radius: 0.6em;
+  -moz-border-radius: 0.6em;
+  -ms-border-radius: 0.6em;
+  -o-border-radius: 0.6em;
+  border-radius: 0.6em;
+}
+/* line 229, ../sass/theme/_layout.scss */
+.message label, .message--success label {
+  display: inline;
+  margin: 0;
+  font-weight: bold;
+}
+
 /* Footer */
-/* line 159, ../sass/theme/_layout.scss */
+/* line 244, ../sass/theme/_layout.scss */
 .footer {
   padding-top: 2.5em;
   background: url("/images/dotted.png") no-repeat top center;
   text-align: center;
-}
-
-/* Example form */
-/* line 170, ../sass/theme/_layout.scss */
-.example-form .example-form--input {
-  margin-bottom: 3em;
 }
 
 /**
@@ -600,7 +680,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
   color: #666666;
   font-family: 1em/1.5 Arial, sans-serif;
   font-weight: bold;
