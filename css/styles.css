@@ -693,7 +693,7 @@ table {
  */
 /* line 10, ../sass/base/_base.scss */
 body {
-  background: url("/images/pattern-bg.png") white;
+  background: white;
   color: #444444;
   font: 1em/1.5 Arial, sans-serif;
 }
