@@ -201,6 +201,12 @@
   text-align: center;
 }
 
+/* line 121, ../sass/theme/_layout.scss */
+.footer--saved-login {
+  display: none;
+  margin-left: 1em;
+}
+
 /**
  *
  * Link buttons

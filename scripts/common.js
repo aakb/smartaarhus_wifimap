@@ -12,6 +12,20 @@ function redirectToLogin() {
   }
 }
 
+function checkLoginSaved() {
+  var savedLoginLink = $('.js-footer-saved-login');
+
+  if ($.cookie('cookie_redirect') != undefined) {
+    savedLoginLink.show();
+  } else {
+    savedLoginLink.hide();
+  }
+
+  savedLoginLink.click(function() {
+    deleteAllCookies();
+  });
+}
+
 // Save login choice.
 function saveLoginChoice() {
   $.cookie('cookie_redirect', window.location.pathname, { expires: 30 });
@@ -98,4 +112,7 @@ function showHidePassword() {
 $(document).ready(function() {
   // Show/hide password.
   showHidePassword();
+
+  // Check if the user has saved login
+  checkLoginSaved();
 });
