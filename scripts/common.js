@@ -1,10 +1,3 @@
-/*
- *
- * Scripts
- *
-*/
-
-
 /**
  * Cookies
  *
@@ -18,7 +11,6 @@ function cookieRedirect() {
     window.location.replace($.cookie('cookie_redirect'));
 
     // If the user is redirected show a message explaining it
-    $.removeCookie('cookie_redirect');
   }
 }
 
