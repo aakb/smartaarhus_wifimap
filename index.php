@@ -2,6 +2,8 @@
 <head>
   <title>SmartAarhus WIFI</title>
   <?php include('inc/meta.inc'); ?>
+  <script type="text/javascript">unsetCookie()</script>
+  <script type="text/javascript">cookieRedirect()</script>
 </head>
 <body class="frontpage">
 <?php include('inc/header.inc'); ?>
