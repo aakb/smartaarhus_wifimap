@@ -5,14 +5,20 @@
 */
 
 
-// Cookies
-// Cookie is used for redirecting the user to the last used login
+/**
+ * Cookies
+ *
+ * Cookie is used for redirecting the user to the last used login
+ */
 
 // Cookie check and redirect
 function cookieRedirect() {
   // Make sure there is a cookie set
   if ($.cookie('cookie_redirect') != undefined) {
     window.location.replace($.cookie('cookie_redirect'));
+
+    // If the user is redirected show a message explaining it
+    $.removeCookie('cookie_redirect');
   }
 }
 
@@ -24,13 +30,16 @@ function setCookie() {
 // Unset cookie
 function unsetCookie() {
   // If the user is going back to the front page delete the cookie
-  if (document.referrer) {
+  if (document.referrer && $.cookie('cookie_redirect') != undefined) {
     $.removeCookie('cookie_redirect');
   }
 }
 
 
-// Function for show/hide password in input fields
+/**
+ * Function for show/hide password in input fields
+ */
+
 function showHidePassword() {
   // Attach toggle password function.
   // URL: https://github.com/cloudfour/hideShowPassword
@@ -41,7 +50,6 @@ function showHidePassword() {
 
   togglePassword.click(function() {
     // Get element from data attribute and attach togglePassword function.
-
     passwordInput.togglePassword();
   });
 
@@ -55,6 +63,9 @@ function showHidePassword() {
 }
 
 
+/**
+ * Start the magic
+ */
 $(document).ready(function() {
   // Show/hide password
   showHidePassword();
