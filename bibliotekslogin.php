@@ -2,7 +2,6 @@
 <head>
   <title>Bibliotekslogin</title>
   <?php include('inc/meta.inc'); ?>
-  <script type="text/javascript">setCookie()</script>
 </head>
 
 <?php include('inc/header.inc'); ?>

@@ -4,28 +4,56 @@
  * Cookie is used for redirecting the user to the last used login
  */
 
-// Cookie check and redirect
-function cookieRedirect() {
-  // Make sure there is a cookie set
+
+// Redirect to login choice.
+function redirectToLogin() {
   if ($.cookie('cookie_redirect') != undefined) {
     window.location.replace($.cookie('cookie_redirect'));
-
-    // If the user is redirected show a message explaining it
   }
 }
 
-// Set cookie
-function setCookie() {
-  $.cookie('cookie_redirect', window.location.pathname);
+// Save login choice.
+function saveLoginChoice() {
+  $.cookie('cookie_redirect', window.location.pathname, { expires: 30 });
+
+  $('.js-cookie-message-saved').text('Dit loginvalg er gemt');
 }
 
-// Unset cookie
-function unsetCookie() {
-  // If the user is going back to the front page delete the cookie
-  if (document.referrer && $.cookie('cookie_redirect') != undefined) {
-    $.removeCookie('cookie_redirect');
-  }
+// Delete login choice.
+function deleteLoginChoice() {
+  $.cookie('cookie_redirect', '', { expires: -1 });
+
+  $('.js-cookie-message-not-saved').text('Dit loginvalg er slettet');
 }
+
+// Show a message if the user is redirected
+function cookieMessage() {
+  var cookieMessage = $('.js-cookie-message');
+  var cookieMessageSaved = $('.js-cookie-message-saved');
+  var cookieLoginMessageNotsaved = $('.js-cookie-message-not-saved');
+
+  if ($.cookie('cookie_redirect') != undefined) {
+    cookieMessageSaved.hide();
+    cookieLoginMessageNotsaved.show();
+  } else {
+    cookieMessageSaved.show();
+    cookieLoginMessageNotsaved.hide();
+  }
+
+  // Show the message container
+  if ($.cookie('cookie_hide_message') != 1) {
+    // Show the message.
+    cookieMessage.show();
+  }
+
+  // Attach hide message function to link
+  $('.js-hide-message').click(function() {
+    $.cookie('cookie_hide_message', 1, { expires: 30 });
+
+    cookieMessage.hide();
+  });
+}
+
 
 
 /**
@@ -34,7 +62,7 @@ function unsetCookie() {
 
 function showHidePassword() {
   // Attach toggle password function.
-  // URL: https://github.com/cloudfour/hideShowPassword
+  // URL: https://github.com/cloudfour/hideShowPassword.
 
   var togglePassword = $('.js-form-toggle-password');
   var togglePasswordText = $('.js-form-toggle-text', togglePassword);
@@ -56,9 +84,20 @@ function showHidePassword() {
 
 
 /**
- * Start the magic
+ * Start the magic.
  */
+
 $(document).ready(function() {
-  // Show/hide password
+  // Show/hide password.
   showHidePassword();
+
+  // Save login choice
+  $('.js-save-login-choice').click(function() {
+    saveLoginChoice();
+  });
+
+  // Delete login choice
+  $('.js-delete-login-choice').click(function() {
+    deleteLoginChoice();
+  });
 });

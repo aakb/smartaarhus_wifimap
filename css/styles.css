@@ -311,7 +311,7 @@
  *
  */
 /* line 8, ../sass/theme/_messages.scss */
-.message, .message--success {
+.message, .message--success, .message--cookie {
   margin-bottom: 2em;
   padding: 1em 1.5em;
   background-color: #b9ff73;
@@ -323,10 +323,25 @@
   border-radius: 0.6em;
 }
 /* line 17, ../sass/theme/_messages.scss */
-.message label, .message--success label {
+.message label, .message--success label, .message--cookie label {
   display: inline;
   margin: 0;
   font-weight: bold;
+}
+/* line 24, ../sass/theme/_messages.scss */
+.message p:last-child, .message--success p:last-child, .message--cookie p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 33, ../sass/theme/_messages.scss */
+.message--cookie {
+  display: none;
+}
+
+/* line 40, ../sass/theme/_messages.scss */
+.message--cookie-saved,
+.message--cookie-not-saved {
+  display: none;
 }
 
 /**
