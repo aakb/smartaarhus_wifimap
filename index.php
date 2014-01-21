@@ -23,10 +23,6 @@
       Medarbejderlogin
       <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
     </a>
-    <a href="gaestelogin.php" class="link-button">
-      Gæstelogin
-      <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
-    </a>
     <a href="sms-send-code.php" class="link-button">
       SMS login
       <span class="link-button--icon-wrapper"><img src="/images/arrow-right.png" class="link-button--icon"></span>
