@@ -3,8 +3,10 @@
   <title>Brug af cookies</title>
   <?php include('inc/meta.inc'); ?>
   <script type="text/javascript">
-    $('.js-delete-login-choice').click(function() {
-      deleteLoginChoice();
+    $(document).ready(function() {
+      $('.js-delete-cookies-link').click(function() {
+        deleteAllCookies($('.js-delete-cookies'));
+      });
     });
   </script>
 </head>
@@ -14,7 +16,7 @@
   <h1>Brug af cookies</h1>
   <div class="page-content">
     <p>[Cookie tekst]</p>
-    <p class="js-cookie-message-not-saved"><a href="#" class="js-delete-login-choice">Slet cookie</a></p>
+    <p class="js-delete-cookies"><a href="#" class="js-delete-cookies-link">Slet cookies</a></p>
   </div>
   <?php include('inc/footer.inc'); ?>
 </div>

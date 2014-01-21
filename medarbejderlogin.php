@@ -5,6 +5,16 @@
   <script type="text/javascript">
     $(document).ready(function() {
       cookieMessage();
+
+      // Save login choice
+      $('.js-save-login-choice').click(function() {
+        saveLoginChoice();
+      });
+
+      // Delete login choice
+      $('.js-delete-login-choice').click(function() {
+        deleteLoginChoice();
+      });
     });
   </script>
 </head>

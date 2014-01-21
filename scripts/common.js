@@ -26,6 +26,14 @@ function deleteLoginChoice() {
   $('.js-cookie-message-not-saved').text('Dit loginvalg er slettet');
 }
 
+// Delete all cookies choice.
+function deleteAllCookies(message) {
+  $.cookie('cookie_redirect', '', { expires: -1 });
+  $.cookie('cookie_hide_message', '', { expires: -1 });
+
+  message.text('Cookies blev slettet');
+}
+
 // Show a message if the user is redirected
 function cookieMessage() {
   var cookieMessage = $('.js-cookie-message');
@@ -90,14 +98,4 @@ function showHidePassword() {
 $(document).ready(function() {
   // Show/hide password.
   showHidePassword();
-
-  // Save login choice
-  $('.js-save-login-choice').click(function() {
-    saveLoginChoice();
-  });
-
-  // Delete login choice
-  $('.js-delete-login-choice').click(function() {
-    deleteLoginChoice();
-  });
 });
