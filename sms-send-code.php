@@ -11,7 +11,7 @@
   <div class="form--wrapper">
     <form action="sms-login.php">
       <label for="mobilnumber">Mobilnummer</label>
-      <input type="number" placeholder="Indtast dit mobilnummer" id="mobilnumber" class="form--input">
+      <input type="number" placeholder="Indtast dit mobilnummer" id="mobilnumber" class="form--input" autocomplete="off">
       <input type="submit" class="button" value="Send kode">
     </form>
   </div>
