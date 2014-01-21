@@ -10,7 +10,7 @@
   <h1>Medarbejderlogin</h1>
   <div class="form--wrapper">
     <form action="logged-in.php">
-      <label for="username">Brugernavn</label>
+      <label for="username">AZ-ident</label>
       <input type="text" placeholder="Indtast dit brugernavn" id="username" class="form--input" autocomplete="off">
       <div class="form--password-wrapper">
         <label for="password">Kodeord</label>

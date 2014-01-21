@@ -11,7 +11,7 @@
   <div class="form--wrapper">
     <form action="logged-in.php">
       <div class="form--password-wrapper">
-        <label for="loan-number">Lånernummer</label>
+        <label for="loan-number">Lånernummer / CPR-nummer</label>
         <input type="password" placeholder="Indtast dit lånernummer fra dit lånerkort" id="loan-number" class="form--input">
         <div class="form--toggle-password js-form-toggle-password" data-toggle-password="loan-number">
           <img src="/images/eye.png" class="form--toggle-password-icon">
