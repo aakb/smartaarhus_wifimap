@@ -12,13 +12,18 @@
 function cookieRedirect() {
   // Make sure there is a cookie set
   if ($.cookie('cookie_redirect') != undefined) {
+    console.log('Do redirect.');
     window.location.replace($.cookie('cookie_redirect'));
+  } else {
+    console.log('No cookie.');
   }
 }
 
 // Set cookie
 function setCookie() {
   $.cookie('cookie_redirect', window.location.pathname);
+
+  console.log('Cookie saved:' + $.cookie('cookie_redirect'));
 }
 
 // Unset cookie
@@ -26,6 +31,8 @@ function unsetCookie() {
   // If the user is going back to the front page delete the cookie
   if (document.referrer) {
     $.removeCookie('cookie_redirect');
+
+    console.log('Cookie deleted:' + $.cookie('cookie_redirect'));
   }
 }
 
