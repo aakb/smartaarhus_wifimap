@@ -1,3 +1,3 @@
 <footer class="footer">
-  <a href="">Brug af cookies</a>
+  <a href="cookies.php">Brug af cookies</a>
 </footer>
