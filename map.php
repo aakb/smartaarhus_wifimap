@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="map">
 <head>
-  <title>SMS login</title>
+  <title>Oversigt over SmartAarhus WIFI</title>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <?php include('inc/meta.inc'); ?>
