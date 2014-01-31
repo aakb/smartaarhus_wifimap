@@ -18,9 +18,19 @@
 .map {
   height: 100%;
 
-  body,
+  body {
+    height: 100%;
+    padding-top: 3em;
+
+    @include box-sizing(border-box);
+  }
+
   #map-canvas {
     height: 100%;
+
+    img {
+      max-width: inherit;
+    }
   }
 
   .header {

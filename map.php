@@ -6,20 +6,20 @@
   <meta charset="utf-8">
   <?php include('inc/meta.inc'); ?>
   <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-  <script src="data/wlandata.js"></script>
+  <script src="/map/data/wlandata.js"></script>
   <script>
     var map;
     function initialize() {
       var mapOptions = {
         zoom: 11,
         center: new google.maps.LatLng(56.1526440,10.2031300),
-        mapTypeId: google.maps.MapTypeId.TERRAIN
+        mapTypeId: google.maps.MapTypeId.TERRAIN,
       }
       map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
       var icons = ['images/map-marker-inactive.png', 'images/map-marker-active.png']
 
-      var size = 25;
+      var size = 50;
       for(var i=0; i<wlanobj.length;i++) {
         var idx = +(wlanobj[i].state=="1")
         var marker = new google.maps.Marker({
@@ -45,7 +45,7 @@
 <?php include('inc/header.inc'); ?>
 <div class="map-content">
   <h1>Byens WIFI</h1>
-  Her ser ud en oversigt over WIFI hotspots i Aarhus.
+  Oversigt over SmartAarhus WIFI.
 </div>
 <div id="map-canvas"></div>
 </body>
