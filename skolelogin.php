@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Skolelogin</title>
   <?php include('inc/meta.inc'); ?>

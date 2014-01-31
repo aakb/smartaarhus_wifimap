@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Brug af cookies</title>
   <?php include('inc/meta.inc'); ?>

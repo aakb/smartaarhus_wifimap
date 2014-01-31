@@ -1,10 +1,10 @@
 <!DOCTYPE html>
+<html class="map">
 <head>
-  <title>SmartAarhus WIFI map</title>
+  <title>SMS login</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/css/styles.css">
+  <?php include('inc/meta.inc'); ?>
   <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <script src="data/wlandata.js"></script>
   <script>
@@ -40,20 +40,13 @@
     google.maps.event.addDomListener(window, 'load', initialize);
 
   </script>
-  <style>
-    #map-canvas {
-      height: 90%;
-      margin: 30px;
-      padding: 0px
-    }
-  </style>
 </head>
 <body>
 <?php include('inc/header.inc'); ?>
-<div class="layout">
-  <h1>SmartAarhus WIFI map</h1>
-  <div id="map-canvas"></div>
-  <?php include('inc/footer.inc'); ?>
+<div class="map-content">
+  <h1>Byens WIFI</h1>
+  Her ser ud en oversigt over WIFI hotspots i Aarhus.
 </div>
+<div id="map-canvas"></div>
 </body>
 </html>

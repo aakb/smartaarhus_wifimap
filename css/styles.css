@@ -95,8 +95,44 @@
   max-width: 45em;
 }
 
+/* Map */
+/* line 18, ../sass/theme/_layout.scss */
+.map {
+  height: 100%;
+}
+/* line 22, ../sass/theme/_layout.scss */
+.map body,
+.map #map-canvas {
+  height: 100%;
+}
+/* line 26, ../sass/theme/_layout.scss */
+.map .header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  margin-bottom: 0;
+  width: 100%;
+}
+/* line 35, ../sass/theme/_layout.scss */
+.map .header--inner {
+  max-width: 100%;
+}
+/* line 39, ../sass/theme/_layout.scss */
+.map .aak-logo--wrapper {
+  right: 2em;
+}
+/* line 43, ../sass/theme/_layout.scss */
+.map .map-content {
+  position: fixed;
+  z-index: 99;
+  top: 6em;
+  left: 7em;
+  padding: 1em;
+  background-color: white;
+}
+
 /* Header */
-/* line 19, ../sass/theme/_layout.scss */
+/* line 58, ../sass/theme/_layout.scss */
 .header {
   height: 3em;
   margin-bottom: 2em;
@@ -104,32 +140,32 @@
   padding-left: 1em;
   background-color: #f89100;
 }
-/* line 28, ../sass/theme/_layout.scss */
+/* line 67, ../sass/theme/_layout.scss */
 .header a:link {
   color: white;
   text-decoration: none;
 }
-/* line 33, ../sass/theme/_layout.scss */
+/* line 72, ../sass/theme/_layout.scss */
 .header a:visited {
   color: #df8200;
 }
-/* line 37, ../sass/theme/_layout.scss */
+/* line 76, ../sass/theme/_layout.scss */
 .header a:hover {
   color: #c57300;
   text-decoration: none;
 }
-/* line 42, ../sass/theme/_layout.scss */
+/* line 81, ../sass/theme/_layout.scss */
 .header a:focus {
   color: #e6e6e6;
 }
 
-/* line 48, ../sass/theme/_layout.scss */
+/* line 87, ../sass/theme/_layout.scss */
 .header--inner {
   position: relative;
 }
 
 /* Logos */
-/* line 59, ../sass/theme/_layout.scss */
+/* line 98, ../sass/theme/_layout.scss */
 .back-link--wrapper,
 .logo--wrapper,
 .aak-logo--wrapper {
@@ -137,17 +173,17 @@
   height: 3em;
 }
 
-/* line 65, ../sass/theme/_layout.scss */
+/* line 104, ../sass/theme/_layout.scss */
 .logo--wrapper {
   left: 2em;
 }
 
-/* line 69, ../sass/theme/_layout.scss */
+/* line 108, ../sass/theme/_layout.scss */
 .aak-logo--wrapper {
   right: 0;
 }
 
-/* line 75, ../sass/theme/_layout.scss */
+/* line 114, ../sass/theme/_layout.scss */
 .back-link,
 .logo,
 .aak-logo {
@@ -161,34 +197,34 @@
   transform: translateY(-50%);
 }
 
-/* line 79, ../sass/theme/_layout.scss */
+/* line 118, ../sass/theme/_layout.scss */
 .logo {
   display: inline-block;
   max-width: 10em;
 }
 
-/* line 84, ../sass/theme/_layout.scss */
+/* line 123, ../sass/theme/_layout.scss */
 .aak-logo {
   max-width: 4em;
 }
 
-/* line 88, ../sass/theme/_layout.scss */
+/* line 127, ../sass/theme/_layout.scss */
 .back-link {
   display: block;
   max-width: 1em;
 }
 
-/* line 94, ../sass/theme/_layout.scss */
+/* line 133, ../sass/theme/_layout.scss */
 .frontpage .back-link {
   display: none;
 }
-/* line 98, ../sass/theme/_layout.scss */
+/* line 137, ../sass/theme/_layout.scss */
 .frontpage .logo--wrapper {
   left: 0;
 }
 
 /* Layout */
-/* line 106, ../sass/theme/_layout.scss */
+/* line 145, ../sass/theme/_layout.scss */
 .layout {
   padding-right: 2em;
   padding-bottom: 3em;
@@ -196,12 +232,12 @@
 }
 
 /* Footer */
-/* line 117, ../sass/theme/_layout.scss */
+/* line 156, ../sass/theme/_layout.scss */
 .footer {
   text-align: center;
 }
 
-/* line 121, ../sass/theme/_layout.scss */
+/* line 160, ../sass/theme/_layout.scss */
 .footer--saved-login {
   display: none;
   margin-left: 1em;
@@ -712,7 +748,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: .75em;
   color: #666666;
   font-family: Arial, sans-serif;
   font-size: 175%;

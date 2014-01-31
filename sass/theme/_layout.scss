@@ -14,6 +14,45 @@
 }
 
 
+/* Map */
+.map {
+  height: 100%;
+
+  body,
+  #map-canvas {
+    height: 100%;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .header--inner {
+    max-width: 100%;
+  }
+
+  .aak-logo--wrapper {
+    right: 2em;
+  }
+
+  .map-content {
+    position: fixed;
+    z-index: 99;
+    top: 6em;
+    left: 7em;
+
+    padding: 1em;
+
+    background-color: $white;
+  }
+}
+
+
 /* Header */
 
 .header {

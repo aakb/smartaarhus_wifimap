@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Logget ind</title>
   <?php include('inc/meta.inc'); ?>
