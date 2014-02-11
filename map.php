@@ -42,7 +42,7 @@
   </script>
 </head>
 <body>
-<?php include('inc/header.inc'); ?>
+<?php include('inc/header-map.inc'); ?>
 <div class="map-content">
   <h1>Byens WIFI</h1>
   Oversigt over SmartAarhus WIFI.
