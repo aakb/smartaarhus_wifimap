@@ -2,11 +2,13 @@
 <html class="map">
 <head>
   <title>Oversigt over SmartAarhus WIFI</title>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
-  <?php include('inc/meta.inc'); ?>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/css/styles.css">
   <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-  <script src="/map/data/wlandata.js"></script>
+  <script src="data/wlandata.js"></script>
   <script>
     var map;
     function initialize() {
@@ -42,7 +44,13 @@
   </script>
 </head>
 <body>
-<?php include('inc/header-map.inc'); ?>
+<header class="header" role="banner">
+  <div class="header--inner">
+    <span class="back-link--wrapper"><img src="/images/arrow-left.png" class="back-link"></span>
+    <span class="logo--wrapper"><img src="/images/logo.png" class="logo"></span>
+    <span class="aak-logo--wrapper"><img src="/images/aak-logo.png" class="aak-logo"></span>
+  </div>
+</header>
 <div class="map-content">
   <h1>Byens WIFI</h1>
   Oversigt over SmartAarhus WIFI.
